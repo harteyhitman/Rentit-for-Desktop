@@ -12,6 +12,7 @@ import AvailableProperties from "./Main/AvailableProperties";
 import LagosIsland from "./Main/LagosIsland";
 import ComingSoon from "./Main/ComingSoon";
 import Footer from "./Main/Footer";
+import HamburgerMenu from './components/HambugerMenu'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <div className="leftside">
           <BlogList />
           <LoginBtn />
+          <HamburgerMenu />
           <MakingPosting />
         </div>
       </div>

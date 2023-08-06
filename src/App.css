@@ -7,7 +7,7 @@
   font-family: "Sora", sans-serif;
 }
 body {
-/* width: 50%; */
+/* width: 100%; */
   background-color: #ffffff;
   font-family: sans-serif;
   margin: 40px 100px;
@@ -15,10 +15,20 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 35px 10px;
+  margin: 0px 100px;
+  background-color: white;
+  width: 90%;
+  z-index: 99;
 }
 .leftside {
   display: flex;
   gap: 20px;
+  margin-right: 50px;
 }
 .rent-it-btn {
   background-color: #3b3386;
@@ -36,6 +46,12 @@ body {
   border: none;
   outline: none;
 }
+.hambuger-navbar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
 .bloglist {
   padding: 8px 24px;
   border: none;
@@ -54,12 +70,13 @@ body {
 }
 .discover-text {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 250px;
+
 }
 .discover-text h1 {
   color: #3b3386;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
 }
 .discover-text p {
   display: flex;
@@ -94,29 +111,27 @@ body {
 }
 .form-data {
   display: flex;
-  gap: 40px;
-  width: 700px;
-  height: 110px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   background-color: #8c8c9a;
-  padding: 24px;
+  padding: 24px 24px;
   border-radius: 24px;
   position: absolute;
-  top: 480px;
+  top:560px;
   left: 280px;
 }
 #price-range {
-  width: 200px;
-  padding: 8px 10px;
+  width: 250px;
+  padding: 15px 20px;
   gap: 20px;
   color: #8c8c9a;
   border-radius: 8px;
   align-items: center;
 }
 #locations {
-  width: 200px;
-  padding: 8px 10px;
+  width: 250px;
+  padding: 15px 20px;
   gap: 20px;
   color: #8c8c9a;
   border-radius: 8px;
@@ -129,8 +144,10 @@ body {
   border: none;
   background-color: #3b3386;
   color: white;
-  width: 105px;
-  height: 32px;
+  padding: 15px 35px;
+  align-items: center;
+  display: flex;
+  align-items: center;
   border-radius: 8px;
   text-align: center;
 }
@@ -158,31 +175,41 @@ label {
   width: 200px;
   height: 50px;
 }
+.explore{
+  display: flex;
+  flex-direction: column;
+}
 .explore-our-platform h6 {
-  font-size: 10px;
-  color: #8c8c9a;
+  font-size: 15px;
+  color: #3B3386;
 }
 .explore-our-platform h3 {
   font-family: "Sofa", sans-serif;
   margin-top: 15px;
+  font-size: 45px;
+  font-weight: bold;
 }
 .explore-our-platform p {
   font-size: 14px;
-  width: 440px;
+  font-weight: bold;
+  width: 480px;
   font-family: "Sofa", sans-serif;
-  color: #959085;
+  color: #554E3B;
+  line-height: 20px;
   margin-top: 15px;
 }
 .explore-our-platform {
+  /* display: flex; */
   margin-top: 50px;
 }
 .explore-list {
+  /* display: flex; */
   line-height: 120px;
 }
-.line {
+.line1 {
   border-bottom: 1px solid #ededed;
 }
-.line span {
+.line1 span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -406,4 +433,236 @@ label {
   display: flex;
   gap: 10px;
   cursor: pointer;
+}
+@media (max-width: 700px) {
+ 
+  .navbar {
+
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 20px;
+   background-color: red;
+   background-size: cover;
+    width: 100%;
+    height: 100px;
+  }
+  .form-data {
+    display: none;
+}
+
+.first-house {
+  display: flex;
+  justify-content: center;
+  width: 330px;
+  height: 200px;
+ margin-left: -60px;
+}
+.retails-houses{
+  display: none;
+}
+.form-data1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px -60px;
+  gap: 40px;
+  /* border: 2px solid black; */
+  width: 330px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -4px 0px 20px 0px rgba(19, 20, 32, 0.16);
+}
+#price-range{
+  width: 300px;
+  background: #FAFAFA;
+  color: #999999;
+  border: none;
+  outline: none;
+}
+.Search-form{
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100px;
+  border-radius: 8px;
+  background: var(--rentit-primary-color-500-main, #3B3386);
+}
+#locations{
+  width: 300px;
+  background-color: #FAFAFA;
+  color: #999999;
+  border: none;
+  outline: none;
+}
+.trusted-by{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  margin: 20px -50px;
+}
+.sponsors{
+  display: flex;
+  justify-content: center;
+  margin-right: -100px;
+}
+.sponsors img{
+  width: 50px;
+  height: 30px;
+
+}
+.explore-list{
+  display: flex;
+  flex-direction: column;
+margin: 20px -50px; 
+  width: 305px;
+}
+.line1{
+  border-bottom: 2px solid #ededed;
+
+}
+.island-container {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+.avail-props{
+  display: flex;
+  flex-direction: column;
+}
+.left-island-img {
+ width: 70%;
+  border-radius: 10px;
+}
+.geo-map {
+  width: 70%;
+}
+.featured-props {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 12px;
+  margin: 140px 0px;
+  width: 100%;
+}
+.explore-our-platform p {
+  font-size: 14px;
+  font-weight: bold;
+  width: 70%;
+  font-family: "Sofa", sans-serif;
+  color: #554E3B;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.footer-data-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.footer-data{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.verified-header{
+  width: 50%;
+  
+}
+.discover-text p{
+ margin: 0;
+ width: 300px;
+ margin-left: -40px;
+
+}
+.discover-text h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+  width: 340px;
+  margin-left: -60px;
+}
+.verified-container{
+  width: 70%;
+}
+.right-island-img {
+  width: 70%;
+}
+.right-island p{
+ width: 50%;
+}
+.moneytag img{
+  width: 150px;
+}
+.welcome-apart{
+  width: 70%;
+}
+  
+}
+.hamburger-menu-bar {
+  text-align: center;
+  margin: 3px auto;
+  max-width: 600px;
+}
+
+.hambuger-navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  width: 20px;
+}
+
+.hamburger-click {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 3px auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+.block-list{
+  display: none;
+}
+.login-container{
+  display: none;
+}
+.making-post{
+  display: none;
 }

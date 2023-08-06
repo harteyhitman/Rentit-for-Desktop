@@ -8,7 +8,7 @@ const LoginBtn = () => {
     }
 
   return (
-    <div>
+    <div className='login-container'>
         <Button onClick={ClickLoginBtn} className="login-btn" label="Login"/>
     </div>
   )

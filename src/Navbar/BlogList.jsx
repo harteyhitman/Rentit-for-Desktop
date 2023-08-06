@@ -8,7 +8,7 @@ const BlogList = () => {
   };
 
   return (
-    <div>
+    <div className='block-list'>
         <Button onClick={ClickBlogList} className="bloglist" label="Blog Listings"/>
     </div>
   )

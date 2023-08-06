@@ -8,7 +8,7 @@ const MakingPosting = () => {
     }
 
   return (
-    <div>
+    <div className='making-post'>
         <Button onClick={ClickMakePosting} className="make-posting-btn" label="Make posting"/>
     </div>
   )

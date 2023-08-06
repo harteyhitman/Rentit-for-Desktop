@@ -2,7 +2,7 @@ import React from 'react'
 
 const HowitWorks = () => {
   return (
-    <div>
+    <div className='explore'>
         <div className="explore-our-platform">
             <h6>EXPLORE OUR PLATFORM</h6>
             <h3>How it works</h3>
@@ -12,10 +12,10 @@ const HowitWorks = () => {
              range of options to suit every need and budget.</p>
         </div>
         <div className="explore-list">
-            <div className='line'><span>1.</span>Search For Property</div>
-            <div className='line'><span>2.</span>Select Wanted Apartment</div>
-            <div className='line'><span>3.</span>Schedule A Tour</div>
-            <div className='line'><span>4.</span>Book Your Apartment</div>
+            <div className='line1'><span>1.</span>Search For Property</div>
+            <div className='line1'><span>2.</span>Select Wanted Apartment</div>
+            <div className='line1'><span>3.</span>Schedule A Tour</div>
+            <div className='line1'><span>4.</span>Book Your Apartment</div>
             </div>
     </div>
   )

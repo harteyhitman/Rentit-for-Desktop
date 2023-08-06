@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from '../components/Button';
-
+import ProductLogo from '../Images/Product-logo.png'
 const RentItBtn = () => {
 
     const handleClick = () => {
@@ -10,7 +9,7 @@ const RentItBtn = () => {
 
   return (
     <div>
-    <Button onClick={handleClick} className="rent-it-btn" label="Rent it"/>
+    <img src={ProductLogo} onClick={handleClick} alt="" />
     </div>
   )
 }
