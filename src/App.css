@@ -121,6 +121,9 @@ body {
   top:560px;
   left: 280px;
 }
+.form-data1{
+  display: none;
+}
 #price-range {
   width: 250px;
   padding: 15px 20px;
