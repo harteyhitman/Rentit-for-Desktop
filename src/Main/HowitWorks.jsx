@@ -1,4 +1,5 @@
 import React from 'react'
+import FurnishedHome from '../Images/furnished-home.png'
 
 const HowitWorks = () => {
   return (
@@ -12,6 +13,7 @@ const HowitWorks = () => {
              range of options to suit every need and budget.</p>
         </div>
         <div className="explore-list">
+        <img className='furnished-home' src={FurnishedHome} alt="" />
             <div className='line1'><span>1.</span>Search For Property</div>
             <div className='line1'><span>2.</span>Select Wanted Apartment</div>
             <div className='line1'><span>3.</span>Schedule A Tour</div>

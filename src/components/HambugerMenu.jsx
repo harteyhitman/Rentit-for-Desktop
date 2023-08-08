@@ -28,10 +28,10 @@ function HambugerMenu() {
           <div className="modal-content">
             <span className="close" onClick={handleCloseModal}>&times;</span>
             <ul>
-            <li>Blog</li>
-            <li>Listings</li>
-            <li>LogIn</li>
-            <li>Postings</li>
+            <li><a href="#Home-page" onClick={handleCloseModal}>Blog</a></li>
+            <li><a href="#Home-page" onClick={handleCloseModal}>Listings</a></li>
+            <li><a href="#Home-page" onClick={handleCloseModal}>LogIn</a></li>
+            <li><a href="#Home-page" onClick={handleCloseModal}>Postings</a></li>
             </ul>
           </div>
         </div>

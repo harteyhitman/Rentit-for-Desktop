@@ -8,7 +8,7 @@ const RentItBtn = () => {
 
 
   return (
-    <div>
+    <div id='Home-page'>
     <img src={ProductLogo} onClick={handleClick} alt="" />
     </div>
   )

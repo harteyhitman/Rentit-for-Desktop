@@ -1,10 +1,12 @@
 import React from "react";
 import MapAsset from '../Images/fullmap.png'
+import Smallimg from '../Images/smallIsland.png'
 
 
 const ComingSoon = () => {
   return (
     <div className="coming-soon-page">
+    <div className="massive-building"><img src={Smallimg} alt="" /></div>
       <div className="coming-soon-container">
         <div className="coming-soon">Coming soon</div>
         <div className="feature-available">
