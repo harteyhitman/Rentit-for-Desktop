@@ -447,8 +447,10 @@ label {
   .navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px;
+    align-items: center;
+    width: 90%;
     height: 100px;
+    margin: 0 auto;
   }
   .form-data {
     display: none;
